@@ -18,9 +18,11 @@ collections: # A list of collections the CMS should be able to edit
         widget: "select"
         options:
           - label: "ああ"
-            value: { id: 'aaa', label: 'ああ' }
+            value: 'aaa'
+#            value: { id: 'aaa', label: 'ああ' }
           - label: "いい"
-            value: { id: 'iii', label: 'いい' }
+            value: 'iii'
+#            value: { id: 'iii', label: 'いい' }
           - 'aaa'
 #          - { label: "ああ", value: { id: 'aaa', label: 'ああ' } }
 
