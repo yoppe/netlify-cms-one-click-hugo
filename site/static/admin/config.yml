@@ -33,7 +33,7 @@ collections: # A list of collections the CMS should be able to edit
 #            value: 'iii'
 
 #            value: { id: 'iii', label: 'いい' }
-          - 'aaa'
+#          - 'aaa'
 #          - { label: "ああ", value: { id: 'aaa', label: 'ああ' } }
 
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
