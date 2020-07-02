@@ -13,14 +13,18 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "ID", name: "id", hint: "aaaa", widget: "slug", required: true}
       - label: "カテゴリー"
         name: "categories"
-        multiple: true
-        required: true
-        widget: "select"
-        options:
-          - label: "ああ"
-            name: "あああ"
-            widget: "object"
-            default: { id: 'aaa', label: 'ああ' }
+        widget: "object"
+        fields:
+          - {label: "Public", name: "public", widget: "boolean", default: true}
+
+#        multiple: true
+#        required: true
+#        widget: "select"
+#        options:
+#          - label: "ああ"
+#            name: "あああ"
+#            widget: "object"
+#            value: { id: 'aaa', label: 'ああ' }
 
 #            fields:
 #              -
