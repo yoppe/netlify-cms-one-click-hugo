@@ -16,8 +16,17 @@ collections: # A list of collections the CMS should be able to edit
         multiple: true
         required: true
         widget: "select"
+        options:
+          - label: "ああ"
+            name: "あああ"
+            widget: "object"
+            default: { id: 'aaa', label: 'ああ' }
 
-        options: [{ label: "ああ", value: { id: 'aaa', label: 'ああ' } }]
+#            fields:
+#              -
+#              - { id: 'aaa', label: 'ああ' }
+
+#        options: [{ label: "ああ", value: { id: 'aaa', label: 'ああ' } }]
 
 #        options:
 #          - { label: "ああ", value: { id: 'aaa', label: 'ああ' } }
