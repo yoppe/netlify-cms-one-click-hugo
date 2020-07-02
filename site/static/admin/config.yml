@@ -9,19 +9,21 @@ collections: # A list of collections the CMS should be able to edit
     label: "Recipe" # Used in the UI, ie.: "New Post"
     folder: "site/content/recipes" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
+    extension: "json"
     fields:
       - {label: "ID", name: "id", hint: "aaaa", widget: "slug", required: true}
       - label: "カテゴリー"
         name: "categories"
-        widget: "object"
-        fields:
-          - {label: "Public", name: "public", widget: "boolean", default: true}
+#        widget: "object"
+#        fields:
+#          - {label: "Public", name: "public", widget: "boolean", default: true}
 
-#        multiple: true
-#        required: true
-#        widget: "select"
-#        options:
-#          - label: "ああ"
+        multiple: true
+        required: true
+        widget: "select"
+        options:
+          - label: "ああ"
+            value: "{ id: 'aaa', label: 'ああ' }"
 #            name: "あああ"
 #            widget: "object"
 #            value: { id: 'aaa', label: 'ああ' }
